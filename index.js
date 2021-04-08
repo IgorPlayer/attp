@@ -300,11 +300,11 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["558581840891@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"558581840891@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["558581840891@s.whatsapp.net"]//ubah nomor lo
+			const ownerNumber = ["558581840891@s.whatsapp.net","558581840891@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"558581840891@s.whatsapp.net","558581840891@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["558581840891@s.whatsapp.net","558581840891@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["558581840891@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["558581840891@s.whatsapp.net","558296156440@s.whatsapp.net"] 
+			const premium = ["558581840891@s.whatsapp.net","558296156440@s.whatsapp.net","558581840891@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -1475,7 +1475,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
                 case 'wolflogo':
-                      if (args.length < 1) return reply('Cadê o texto?')
+                      if (args.length < 1) return reply('Cadê o texto amigo?')
                       gh = body.slice(9)
                       gl1 = gh.split("|")[0];
                       gl2 = gh.split("|")[1];
@@ -1485,7 +1485,7 @@ if (text.includes("placa"))
                       client.sendMessage(from, buff, image, {quoted: mek})
                       break
                 case 'lionlogo':
-                      if (args.length < 1) return reply('Cadê o texto?')
+                      if (args.length < 1) return reply('Cadê o texto amigo?')
                       gh = body.slice(9)
                       gl1 = gh.split("|")[0];
                       gl2 = gh.split("|")[1];
